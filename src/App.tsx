@@ -1,10 +1,11 @@
-import "./App.css";
+import "./styles/App.css";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div>
-      <h1>Hello Jeraven</h1>
-    </div>
+    <main>
+      <Hero />
+    </main>
   );
 }
 

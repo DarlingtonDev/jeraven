@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("/Poppins-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+  }
+}
+
+@theme {
+  --color-primary: #6c22ad;
+  --font-poppins: "Poppins", "san-serif";
+  --font-inter: "Inter", "san-serif";
+}
