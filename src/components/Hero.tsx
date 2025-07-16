@@ -1,8 +1,11 @@
 import { ArrowUpRight, PhoneCall } from "lucide-react";
 import { useEffect, useState } from "react";
 import Myobserver from "../utilities/observer";
+import { DeliveryCard } from "./DeliveryCard";
 
 const Hero = () => {
+  const [bgLoaded, setbgLoaded] = useState(false);
+
   const deliveryData = [
     {
       transparency: 1,
@@ -64,71 +67,16 @@ const Hero = () => {
       </>
     );
   };
-  const DeliveryCard = ({
-    transparency,
-    imageUrl,
-    time,
-    date,
-  }: {
-    transparency: number;
-    imageUrl: string;
-    time: string;
-    date: string;
-  }) => {
-    return (
-      <div
-        className={`rounded-xl z-30 px-2.5 py-3 ${
-          transparency === 1
-            ? "bg-white/50 w-[85%] backdrop-blur-lg -translate-y-8 z-20"
-            : transparency === 2
-            ? "-translate-y-4 z-30 w-[90%] bg-white/70 backdrop-blur-lg delay-500"
-            : "bg-white z-10 w-[95%] delay-1000"
-        } absolute  h-full transition-all opacity-0 duration-500 ease-out translate-x-5 delivery-card`}
-      >
-        <div className="flex justify-between w-full items-center">
-          <div className="w-1/2 flex items-center gap-1">
-            <div className="w-8 h-8  rounded-[50%]">
-              <img
-                src={imageUrl}
-                alt="courier image"
-                className="rounded-[50%]"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-3 w-full flex justify-between items-center">
-          <div className="w-1/2">
-            <h2 className=" text-xs font-inter font-semibold"> NG/FCT-0218</h2>
-            <p className=" font-inter text-gray-700 text-[11px]">In-transit</p>
-          </div>
-
-          <div className="w-1/2 flex flex-col items-end font-inter text-xs font-semibold">
-            <p>{time}</p>
-            <p className="text-gray-600 font-normal text-[11px]">{date}</p>
-          </div>
-        </div>
-
-        <div className="mt-3 w-full h-24">
-          <img
-            src="/assets/ship.jpg"
-            alt="containers"
-            className="w-full h-full object-cover object-center rounded-md"
-          />
-        </div>
-      </div>
-    );
-  };
 
   const Header = () => {
     return (
-      <header className="flex items-center px-5 sticky top-5 w-full min-h-14 border border-white/30 bg-white/20 shadow-md backdrop-blur-xl rounded-3xl">
+      <header className="flex z-50 items-center px-5 absolute mx-auto max-w-[80.5rem] top-4 w-full min-h-14 border border-white/30 bg-white/20 shadow-md backdrop-blur-xl rounded-3xl">
         <div className="w-[60%]">
           <div className="w-[4rem] h-6">
             <img
               src="/assets/logo.png"
               alt="logo"
-              className="w-full h-full object-contain"
+              className="w-full h-auto object-contain mt-2"
             />
           </div>
         </div>
@@ -151,10 +99,22 @@ const Hero = () => {
   };
   return (
     <section className="w-full bg-gray-50 h-lvh p-2 hero">
-      <div className="relative w-full h-full bg-center bg-cover bg-[url('/assets/bg.jpeg')] rounded-2xl ">
+      <div
+        className={`relative w-full h-full bg-center ${
+          bgLoaded
+            ? "bg-[url('/assets/bg.jpeg')]"
+            : "bg-[url('/assets/bg-blur.webp')]"
+        } bg-cover  rounded-2xl`}
+      >
+        <img
+          src="/assets/bg.jpeg"
+          alt="loaded background image"
+          className="hidden"
+          onLoad={() => setbgLoaded(true)}
+        />
         <div className="absolute w-full h-full bg-black/30 rounded-2xl px-4">
           <Header />
-          <div className="mt-32 px-4 transition-all duration-1000 ease-out opacity-0 -translate-y-5 hero-text">
+          <div className="mt-40 px-4 transition-all duration-700 ease-out opacity-0 -translate-y-5 hero-text">
             <h1 className="text-3xl font-medium font-poppins text-white">
               Trusted Logistics
               <br />
@@ -196,7 +156,9 @@ const Hero = () => {
           <div className="w-1/2 h-16">
             <img
               src="/assets/movingcar.jpg"
-              alt="moving vehicles"
+              loading="eager"
+              fetchPriority="high"
+              alt="moving vehicles blurred"
               className="w-full h-full object-cover object-center rounded-md"
             />
           </div>

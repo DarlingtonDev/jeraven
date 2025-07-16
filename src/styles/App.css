@@ -6,6 +6,7 @@
     src: url("/Poppins-Medium.ttf") format("truetype");
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
   }
   @font-face {
     font-family: "Poppins";
@@ -34,4 +35,10 @@
   --color-primary: #6c22ad;
   --font-poppins: "Poppins", "san-serif";
   --font-inter: "Inter", "san-serif";
+}
+
+@layer utilities {
+  .card-shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
 }
