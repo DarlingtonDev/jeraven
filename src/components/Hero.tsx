@@ -83,13 +83,13 @@ const Hero = () => {
 
         <div className="w-[40%] flex items-center justify-between">
           <ul className="flex w-[70%] justify-around bg-white font-medium py-2 px-2 text-[11px] font-inter rounded-2xl">
-            <li>Models</li>
+            <li>Home</li>
             <li>Services</li>
             <li>Routes</li>
             <li>Insurance</li>
           </ul>
 
-          <button className="bg-black text-[11px] text-white font-inter px-3 py-2 rounded-md flex items-center gap-2">
+          <button className="bg-primary text-[11px] text-white font-inter px-3 py-2 rounded-md flex items-center gap-2">
             <PhoneCall className="w-4 h-4" />
             Book a Call
           </button>
@@ -127,14 +127,14 @@ const Hero = () => {
               every time.
             </p>
 
-            <div className="mt-4 bg-black w-fit px-2 py-1 rounded-2xl gap-1.5 flex items-center">
+            <button className="mt-4 bg-primary w-fit px-2 py-1 rounded-2xl gap-1.5 flex items-center">
               <p className="text-[11px] font-poppins text-white">
                 Ship with us
               </p>
               <div className="border rounded-[50%] flex justify-center items-center bg-white w-6 h-6">
                 <ArrowUpRight className="w-3 h-3" />
               </div>
-            </div>
+            </button>
           </div>
         </div>
 
@@ -165,10 +165,10 @@ const Hero = () => {
         </div>
 
         <div className="absolute w-[10%] left-[55%] top-1/2 -translate-x-1/2 -translate-y-1/2  flex items-center">
-          <GlowingDot text="Efficiency" />
+          <GlowingDot text="Fast" />
         </div>
         <div className="absolute w-[10%] right-[10%] top-[30%]  flex items-center">
-          <GlowingDot text="Smart" />
+          <GlowingDot text="Reliable" />
         </div>
       </div>
     </section>

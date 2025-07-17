@@ -19,9 +19,9 @@ export const DeliveryCard = React.memo(
           transparency === 1
             ? "bg-white/50 w-[85%] backdrop-blur-lg -translate-y-8 z-20"
             : transparency === 2
-            ? "-translate-y-4 z-30 w-[90%] bg-white/70 backdrop-blur-lg delay-500"
-            : "bg-white z-10 w-[95%] delay-1000"
-        } absolute  h-full transition-all opacity-0 duration-500 ease-out translate-x-5 delivery-card`}
+            ? "-translate-y-4 z-30 w-[90%] bg-white/70 backdrop-blur-lg delay-200"
+            : "bg-white z-10 w-[95%] delay-400"
+        } absolute  h-full transition-all opacity-0 duration-1000 ease-out translate-x-5 delivery-card`}
       >
         <div className="flex justify-between w-full items-center">
           <div className="w-1/2 flex items-center gap-1">
