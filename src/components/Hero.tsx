@@ -85,8 +85,8 @@ const Hero = () => {
           <ul className="flex w-[70%] justify-around bg-white font-medium py-2 px-2 text-[11px] font-inter rounded-2xl">
             <li>Home</li>
             <li>Services</li>
-            <li>Routes</li>
-            <li>Insurance</li>
+            <li>Testimonials</li>
+            <li>Faq</li>
           </ul>
 
           <button className="bg-primary text-[11px] text-white font-inter px-3 py-2 rounded-md flex items-center gap-2">

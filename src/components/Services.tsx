@@ -1,6 +1,6 @@
 import {
   Boxes,
-  CheckCheck,
+  Check,
   ChevronRight,
   Clock,
   Store,
@@ -49,12 +49,12 @@ const Services = () => {
   }) => {
     return (
       <div className="bg-white border-gray-200 rounded-2xl min-h-44 shrink-0 w-[calc(25%-0.5rem)] card-shadow py-5 px-4">
-        <div className="w-10 h-9 rounded-md bg-lighter-primary flex justify-center items-center">
-          <Icon className="text-white w-5 h-5" />
+        <div className="w-10 h-9 rounded-md bg-white card-shadow flex justify-center items-center">
+          <Icon className="text-primary w-5 h-5" />
         </div>
 
-        <div className="font-inter mt-3">
-          <h2 className="font-semibold text-sm">{title}</h2>
+        <div className="font-inter mt-4">
+          <h2 className="font-medium text-[13px] font-poppins">{title}</h2>
           <p className="mt-2 text-xs font-medium text-gray-600">{paragraph}</p>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Services = () => {
   return (
     <section className="mt-10 py-4">
       <div className="w-full flex justify-between items-center px-14">
-        <h1 className="text-2xl font-medium font-poppins">
+        <h1 className="text-2xl font-medium font-poppins ">
           Jeraven's <br />
           Logistics Solutions
         </h1>
@@ -85,45 +85,45 @@ const Services = () => {
       </div>
 
       <div className="w-full mt-16 min-h-44 flex justify-between px-14">
-        <div className=" w-[40%] min-h-[18rem]  py-8 flex items-center justify-center border border-dotted border-primary">
+        <div className=" w-[40%] min-h-[18rem]  py-8 flex items-center justify-center border border-dotted border-primary rounded-md">
           <div className=" h-full w-[90%]">
-            <img src="/assets/delivery.jpg" alt="" loading="lazy" />
+            <img src="/assets/delivery.jpg" alt="" loading="eager" />
           </div>
         </div>
 
         <div className="w-1/2 flex py-4 flex-col">
-          <p className="font-inter text-gray-600 text-[13px] font-medium">
+          <p className="font-poppins text-gray-600 text-[13px] font-medium">
             Secure Delivery. Trusted Remittance
           </p>
-          <h2 className="font-inter mt-2 text-2xl font-semibold">
+          <h2 className="font-poppins mt-2 text-2xl font-medium">
             <span>Payment-on-Delivery</span>{" "}
-            <span className="bg-primary-shade text-white px-2 py-0.5">
+            <span className="bg-lighter-primary text-white px-2 py-0.5">
               Made Easy
             </span>
           </h2>
-          <p className="mt-2 font-inter max-w-[90%] text-[13px] font-medium ">
+          <p className="mt-2 font-inter max-w-[90%] text-[13px] font-medium text-gray-600">
             We handle your deliveries, collect payment from your customer and
             remit the cash directly to your account - fast, secure and
             stress-free
           </p>
 
           <ul className="mt-4 flex gap-2 flex-col  font-inter text-[13px] font-medium text-gray-900">
-            <li className="flex gap-1 items-center">
+            <li className="flex gap-1 items-center text-gray-600">
               {" "}
-              <CheckCheck className="w-4 h-4 text-green-600" /> Payments
-              collected on your behalf
+              <Check className="w-4 h-4 text-green-600" /> Payments collected on
+              your behalf
             </li>
-            <li className="flex gap-1 items-center">
-              <CheckCheck className="w-4 h-4 text-green-600" /> Timely,
-              scheduled remittance you can count on
+            <li className="flex gap-1 items-center text-gray-600">
+              <Check className="w-4 h-4 text-green-600" /> Timely, scheduled
+              remittance you can count on
             </li>
-            <li className="flex gap-1 items-center">
-              <CheckCheck className="w-4 h-4 text-green-600" /> Trusted by
-              vendors, stores, and eCommerce sellers
+            <li className="flex gap-1 items-center text-gray-600">
+              <Check className="w-4 h-4 text-green-600" /> Trusted by vendors,
+              stores, and eCommerce sellers
             </li>
           </ul>
 
-          <button className="flex gap-0.5 items-center self-start mt-7 font-inter text-white text-[13px] px-2 py-2.5 rounded-sm bg-primary-shade">
+          <button className="flex gap-0.5 items-center self-start mt-7 font-inter text-primary text-[13px] px-2 py-2.5 rounded-sm  ml-1">
             Start Collecting Today
             <ChevronRight className="w-4 h-4" />
           </button>
