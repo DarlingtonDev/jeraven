@@ -9,7 +9,14 @@ import {
 export function FAQ() {
   return (
     <section className="w-full px-6 md:px-14 py-10 font-inter">
-      <Accordion type="single" collapsible className="w-full space-y-2">
+      <h2 className="font-inter font-bold ">
+        Frequently Asked{" "}
+        <span className="bg-lighter-primary text-white py-0.5 px-1">
+          Questions
+        </span>
+      </h2>
+
+      <Accordion type="single" collapsible className="w-full space-y-2 mt-3">
         <AccordionItem value="item-1" className="border-gray-600">
           <AccordionTrigger className="no-underline hover:no-underline cursor-pointer font-semibold text-[13px] ">
             Do you operate outside Abuja?

@@ -54,7 +54,7 @@ const Testimonial = () => {
     role: string;
   }) => {
     return (
-      <div className="min-h-fit w-full rounded-xl bg-white card-shadow px-3 py-4">
+      <div className="lg:min-h-fit w-full rounded-xl bg-white card-shadow px-3 py-4 shrink-0 lg:shrink-1 snap-center">
         <h3 className="italic font-semibold font-poppins  text-gray-600 text-[13px]">
           - {topText}
         </h3>
@@ -98,7 +98,10 @@ const Testimonial = () => {
     );
   };
   return (
-    <section className="px-14 w-full mt-16 py-6">
+    <section
+      className="lg:px-14 w-full mt-10 lg:mt-16 py-6 testimonials opacity-0 transition-all ease-in-out duration-700 translate-y-10"
+      id="testimonials"
+    >
       <div className="flex flex-col items-center">
         <div className="relative w-fit px-3 py-1">
           <div className="absolute right-0 top-0 flex flex-col items-end">
@@ -116,17 +119,23 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <h1 className="mt-4 text-2xl font-poppins font-semibold">
+        <h1 className="mt-6 text-center lg:text-left lg:mt-4 text-2xl font-poppins font-semibold px-8">
           Some of our satisfied customers
         </h1>
-        <h1 className="mt-2 text-2xl font-poppins font-semibold text-gray-500">
+        <h1 className="mt-2 text-center lg:text-left text-2xl font-poppins font-semibold text-gray-500 px-8">
           Results that speaks volume
         </h1>
-        <p className="mt-2 text-xs font-inter text-gray-600">
+        <p className="mt-2 text-xs font-inter text-gray-600 px-8">
           Find out how our happy clients are raving about us
         </p>
 
-        <div className="w-[80%] mt-12 px-8 flex space-x-4">
+        <div className="flex lg:hidden gap-x-4 mt-8 w-full overflow-x-auto snap-x snap-mandatory scroll-smooth py-4 px-8">
+          {testimonials.map((values, index) => (
+            <Card key={index} {...values} />
+          ))}
+        </div>
+
+        <div className="w-[80%] mt-12 px-8 space-x-4 hidden lg:flex">
           <div className="w-1/2 flex flex-col space-y-4">
             <Card
               topText={testimonials[0].topText}

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "tailwindcss-motion";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -34,6 +35,35 @@
   }
 }
 
+@keyframes motion-collapse-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(6px) rotate(45deg);
+  }
+}
+
+@keyframes motion-collapse-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-6px);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateclockwise {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: -45deg;
+  }
+}
+
 @theme {
   --color-primary: #6c22ad;
   --color-lighter-primary: #a879d1;
@@ -47,6 +77,16 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
+  .collapse-down {
+    animation: motion-collapse-down 0.3s ease-in-out forwards;
+  }
+  .collapse-up {
+    animation: motion-collapse-up 0.3s ease-in-out forwards;
+  }
+
+  .rotate-down {
+    animation: rotateclockwise 0.3s ease-in forwards;
+  }
   .italic {
     font-style: italic;
   }
