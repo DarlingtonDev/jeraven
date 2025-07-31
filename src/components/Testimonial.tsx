@@ -6,7 +6,7 @@ const Testimonial = () => {
       type: "long",
       topText: "No more failed deliveries",
       quote:
-        "I've worked with a few logistics companies before, but Jeraven stands out for one simple reason — they actually care about your deliveries. My customers get their items on time, and if there's ever an issue, someone calls before I even ask. Honestly, I just rest now.",
+        "I've worked with a few logistics companies before, but FastDrive stands out for one simple reason — they actually care about your deliveries. My customers get their items on time, and if there's ever an issue, someone calls before I even ask. Honestly, I just rest now.",
       name: "Aisha Bello",
       role: "E-commerce Vendor (Skincare)",
     },
@@ -14,7 +14,7 @@ const Testimonial = () => {
       type: "medium",
       topText: "Pickup always on schedule",
       quote:
-        "Jeraven gives me peace of mind. I don't have to chase riders or keep explaining to customers — once I schedule a pickup, I know it's handled.",
+        "FastDrive gives me peace of mind. I don't have to chase riders or keep explaining to customers — once I schedule a pickup, I know it's handled.",
       name: "Emeka Uzo",
       role: "E-commerce Vendor (Tech Accessories)",
     },
@@ -22,21 +22,21 @@ const Testimonial = () => {
       type: "medium",
       topText: "Timely remittance, no delay",
       quote:
-        "Their pay-on-delivery remittance works well for my business. Even when things are tight, Jeraven doesn’t delay — they always keep to the plan.",
+        "Their pay-on-delivery remittance works well for my business. Even when things are tight, FastDrive doesn’t delay — they always keep to the plan.",
       name: "Fatima Yakubu",
       role: "Online Retailer (Home Goods)",
     },
     {
       type: "short",
       topText: "Deliveries now 2x faster",
-      quote: "Fast, friendly, and reliable — Jeraven is my go-to in Abuja.",
+      quote: "Fast, friendly, and reliable — FastDrive is my go-to in Abuja.",
       name: "Tunde Adebayo",
       role: "Mini Importation Business",
     },
     {
       type: "short",
       topText: "Reliable logistics partner",
-      quote: "No stories, no stress. Jeraven delivers.",
+      quote: "No stories, no stress. FastDrive delivers.",
       name: "Chika Nwosu",
       role: "Online Boutique Owner",
     },

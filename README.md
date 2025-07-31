@@ -1,12 +1,12 @@
-# Jeraven Logistics Landing Page
+# FastDrive Logistics Landing Page
 
-This is a fully responsive landing page for **Jeraven**, a modern Nigerian logistics company offering fast, reliable, and customer-focused delivery solutions. The website was designed and developed to help showcase the company’s services, build credibility, and support customer onboarding across Nigeria.
+This is a fully responsive landing page for **FastDrive**, an **imaginary** modern Nigerian logistics company offering fast, reliable, and customer-focused delivery solutions. The website was designed and developed to help showcase the company’s services, build credibility, and support customer onboarding across Nigeria.
 
 ## 💼 Purpose
 
 This project was built with two main goals:
 
-- **Client Presentation:** To pitch a complete, ready-to-deploy website to the business owner and demonstrate a clear understanding of Jeraven’s business model.
+- **Client Presentation:** To pitch a complete, ready-to-deploy website to the business owner and demonstrate a clear understanding of FastDrive’s business model.
 - **Production-Ready Code:** Designed with best practices for scalability, SEO, and responsive design on all screen sizes.
 
 ## 🚀 Features
@@ -37,7 +37,7 @@ Further adjustments will depend on client feedback if the pitch is accepted.
 
 ### 👤 Developer
 
-This project was independently built by Fortune Obi as a pitch for the Jeraven brand. It focuses on functionality, user experience, and clarity — aiming to help the company stand out online.
+This project was independently built by Fortune Obi. It focuses on user experience, and clarity — aiming to help the company stand out online.
 
 ---
 

@@ -21,15 +21,7 @@ const Ready = () => {
               reach their destination on time — without the stress.
             </p>
 
-            <button
-              className="mt-4 cursor-pointer lg:mt-3 flex py-4 lg:py-2.5 rounded-sm gap-x-2  px-2 font-inter text-[13px] lg:text-xs bg-black lg:bg-lighter-primary text-white"
-              onClick={() =>
-                window.open(
-                  "https://wa.me/2349026707113?text=Hi%20Jeraven%2C%20please%20send%20me%20a%20quote%20for%20a%20delivery%20service.%20I%E2%80%99ll%20share%20the%20details%20now.",
-                  "_blank"
-                )
-              }
-            >
+            <button className="mt-4 cursor-pointer lg:mt-3 flex py-4 lg:py-2.5 rounded-sm gap-x-2  px-2 font-inter text-[13px] lg:text-xs bg-black lg:bg-lighter-primary text-white">
               Request a quote
               <div className="w-[1px] bg-white rounded-2xl hidden lg:block"></div>
               <ArrowUpRight className="w-4 h-4" />

@@ -6,7 +6,9 @@ const Footer = () => {
       <div className="flex items-stretch w-full gap-x-4 flex-col lg:flex-row gap-8">
         <div className="w-full lg:w-1/3 h-auto flex flex-col">
           <div className="w-[30%] h-10 flex justify-center items-center rounded-[2px] bg-lighter-primary px-2">
-            <img src="/assets/logo.png" alt="Jeraven's logo" />
+            <h1 className="font-inter font-medium text-white text-xl">
+              FastDrive
+            </h1>
           </div>
           <p className=" font-inter lg:text-[13px] text-[12px] font-medium mt-3">
             {" "}
@@ -14,18 +16,13 @@ const Footer = () => {
             We move with precision, so your goods arrive right — every time.
           </p>
 
-          <div className="flex gap-x-5 lg:gap-x-3 mt-5">
+          <div className="flex gap-x-5 lg:gap-x-3 mt-5 ">
             <img
               src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
               alt="Instagram"
               width={20}
               height={20}
-              onClick={() =>
-                window.open(
-                  "https://www.instagram.com/abuja_ecommerce_logistics?igsh=MXUydjB6NXRrYmdhMA==",
-                  "_blank"
-                )
-              }
+              className="cursor-pointer"
             />
 
             <img
@@ -33,9 +30,7 @@ const Footer = () => {
               alt="X icon"
               width="20"
               height="20"
-              onClick={() =>
-                window.open("https://x.com/jeravenecomlog?s=21", "_blank")
-              }
+              className="cursor-pointer"
             />
           </div>
         </div>
@@ -49,17 +44,17 @@ const Footer = () => {
             <div className="flex gap-x-2 items-center font-inter lg:text-[13px] text-[12px] font-medium">
               <Map className="lg:w-4 lg:h-4 w-4 h-4 text-primary" />
               <p>
-                Block C, C1001 Apo Urban Market, Apo{" "}
+                Block F, 20012 Kubwa Region Market, Kubwa{" "}
                 <br className="lg:hidden" /> Resettlement Abuja, Nigeria
               </p>
             </div>
             <div className="flex gap-x-2 items-center font-inter lg:text-[13px] text-[12px] font-medium">
               <PhoneIncoming className="lg:w-4 lg:h-4 w-4 h-4 text-primary" />
-              <p>(+234) 902 670 7113</p>
+              <p>(+234) 708 770 8112</p>
             </div>
             <div className="flex gap-x-2 items-center font-inter lg:text-[13px] text-[12px] font-medium">
               <MailIcon className="lg:w-4 lg:h-4 w-4 h-4 text-primary" />
-              <p>Jeravenlogistics@gmail.com</p>
+              <p>Fastdrivelogistics@gmail.com</p>
             </div>
           </div>
         </div>

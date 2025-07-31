@@ -113,13 +113,8 @@ const Hero = () => {
     return (
       <header className="flex flex-col lg:flex-row lg:left-auto lg:-translate-x-0 left-1/2 w-[95%] lg:justify-start justify-between -translate-x-1/2 z-50 items-center px-5 absolute mx-auto max-w-[80.5rem] pb-4 lg:pb-0 top-4 lg:w-full min-h-14 border border-white/30 bg-white/20 shadow-md lg:backdrop-blur-xl backdrop-blur-md rounded-3xl py-2 lg:py-0">
         <div className="lg:w-[60%] flex lg:block justify-between w-full items-center">
-          <div className="w-[4rem] lg:h-6 h-7 flex justify-center">
-            <img
-              src="/assets/logo.png"
-              alt="logo"
-              className="w-full h-auto object-contain mt-2"
-            />
-          </div>
+          <p className="mt-2 font-inter font-medium text-white ">FastDrive</p>
+
           <div className="mt-2">
             <MenuBar />
           </div>
@@ -233,15 +228,7 @@ const Hero = () => {
               every time.
             </p>
 
-            <button
-              className="cursor-pointer mt-6 md:mt-4 bg-primary w-fit px-2 py-1.5 md:py-1 rounded-2xl gap-1.5 md:flex items-center hidden"
-              onClick={() =>
-                window.open(
-                  "https://wa.me/2349026707113?text=Hello%20Jeraven%2C%20I%E2%80%99m%20ready%20to%20ship%20a%20package.%20Please%20guide%20me%20on%20what%20to%20do%20next.",
-                  "_blank"
-                )
-              }
-            >
+            <button className="cursor-pointer mt-6 md:mt-4 bg-primary w-fit px-2 py-1.5 md:py-1 rounded-2xl gap-1.5 md:flex items-center hidden">
               <p className="md:text-[11px] text-xs font-medium font-poppins text-white">
                 Ship with us
               </p>
@@ -250,15 +237,7 @@ const Hero = () => {
               </div>
             </button>
 
-            <button
-              className="md:hidden mt-4 bg-primary px-4 py-3 text-white font-inter rounded-sm text-[13px]"
-              onClick={() =>
-                window.open(
-                  "https://wa.me/2349026707113?text=Hello%20Jeraven%2C%20I%E2%80%99m%20ready%20to%20ship%20a%20package.%20Please%20guide%20me%20on%20what%20to%20do%20next.",
-                  "_blank"
-                )
-              }
-            >
+            <button className="md:hidden mt-4 bg-primary px-4 py-3 text-white font-inter rounded-sm text-[13px]">
               Ship with us
             </button>
           </div>
@@ -273,7 +252,7 @@ const Hero = () => {
         <div className="car-sec transition-all ease-in-out duration-700 opacity-0 translate-y-5 absolute px-3 md:px-2 py-3 w-[85%] lg:w-[25%] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-10 min-h-[94px] bottom-14 lg:bottom-10 bg-white rounded-md flex justify-between items-center">
           <div className="w-1/2 h-full">
             <h2 className="font-inter text-xs font-semibold">
-              Jeraven Logistics
+              FastDrive Logistics
             </h2>
             <p className="text-[11px] font-inter mt-1.5 text-gray-600 font-medium">
               Built for fast dispatch and <br /> on-time delivery in Abuja.

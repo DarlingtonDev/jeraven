@@ -22,7 +22,7 @@ export function FAQ() {
             Do you operate outside Abuja?
           </AccordionTrigger>
           <AccordionContent className=" text-[13px] font-medium">
-            Jeraven is currently focused on fast, reliable delivery services
+            FastDrive is currently focused on fast, reliable delivery services
             within Abuja. However, expansion plans are underway. Stay tuned or
             contact us for special interstate requests.
           </AccordionContent>
@@ -30,7 +30,7 @@ export function FAQ() {
 
         <AccordionItem value="item-2" className="border-gray-600">
           <AccordionTrigger className="hover:no-underline cursor-pointer font-semibold text-[13px]">
-            How does cash-on-delivery work with Jeraven?
+            How does cash-on-delivery work with FastDrive?
           </AccordionTrigger>
           <AccordionContent className=" text-[13px] font-medium">
             When your customer pays on delivery, our dispatch riders collect the
@@ -54,7 +54,7 @@ export function FAQ() {
             What types of deliveries do you support?
           </AccordionTrigger>
           <AccordionContent className=" text-[13px] font-medium">
-            Jeraven handles intra-city cargo delivery, e-commerce deliveries,
+            FastDrive handles intra-city cargo delivery, e-commerce deliveries,
             multi-stop drops, and high-volume business orders with precision and
             care.
           </AccordionContent>

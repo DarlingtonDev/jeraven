@@ -83,7 +83,7 @@ const Services = () => {
     <section className=" mt-10 py-4 px-6 " id="services">
       <div className="first-service opacity-0 transition-all ease-in-out duration-700 translate-y-10 w-full flex lg:flex-row flex-col lg:justify-between lg:items-center lg:px-14 motion-opacity-in-0">
         <h1 className="text-2xl font-medium font-poppins ">
-          Jeraven's <br />
+          FastDrive's <br />
           Logistics Solutions
         </h1>
 
@@ -178,15 +178,7 @@ const Services = () => {
             </li>
           </ul>
 
-          <button
-            className=" border cursor-pointer border-lighter-primary lg:border-none flex gap-0.5 items-center self-start mt-7 font-inter text-primary text-[13px] px-2 py-2.5 rounded-none  ml-1"
-            onClick={() =>
-              window.open(
-                "https://wa.me/2349026707113?text=Hi%20Jeraven%2C%20I%E2%80%99m%20interested%20in%20Payment-on-Delivery%20services.%20How%20can%20I%20get%20started%20today%3F",
-                "_blank"
-              )
-            }
-          >
+          <button className=" border cursor-pointer border-lighter-primary lg:border-none flex gap-0.5 items-center self-start mt-7 font-inter text-primary text-[13px] px-2 py-2.5 rounded-none  ml-1">
             Start Collecting Today
             <ChevronRight className="w-4 h-4" />
           </button>

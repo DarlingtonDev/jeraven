@@ -72,7 +72,7 @@ const WhyUs = () => {
           <span className="text-primary">/</span>Why us?
         </p>
         <h1 className="text-4xl lg:text-5xl mt-2.5 font-poppins lg:leading-normal leading-tight">
-          The Jeraven
+          The FastDrive
           <span className="bg-primary-shade flex w-fit gap-x-3 text-white lg:px-1 px-1.5 py-1">
             Difference
           </span>
@@ -83,16 +83,8 @@ const WhyUs = () => {
           Just delivery that works
         </p>
 
-        <button
-          className="cursor-pointer mt-6 lg:border-none border border-lighter-primary px-1 py-2 lg:mt-5 flex items-center text-primary font-inter text-[13px] "
-          onClick={() =>
-            window.open(
-              "https://wa.me/2349026707113?text=Hello%20Jeraven%2C%20I%E2%80%99d%20like%20to%20try%20your%20logistics%20service%20for%20a%20delivery.%20What%20do%20I%20need%20to%20do%3F",
-              "_blank"
-            )
-          }
-        >
-          Try Jeraven Today <ChevronRight className="w-4 h-4" />
+        <button className="cursor-pointer mt-6 lg:border-none border border-lighter-primary px-1 py-2 lg:mt-5 flex items-center text-primary font-inter text-[13px] ">
+          Try FastDrive Today <ChevronRight className="w-4 h-4" />
         </button>
       </div>
 
